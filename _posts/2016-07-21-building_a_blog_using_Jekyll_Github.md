@@ -16,16 +16,20 @@ title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 
 * 블로그 방문자와의 소통이 가능한지..(댓글 등의 기능이 지원하는지 잘 모르겠다.)
 * 블로그 글이나 사진 파일들의 정리를 직접 해야 된다.
-* 검색, 태그, 꾸미기 등의 기능 지원
+* 사진, 동영상을 포스팅에 포함하는 과정이 번거롭다.
+* 검색, 태그, 꾸미기 등의 기능 지원 미비
 
 아마도 예상되는 단점에 대한 것은 찾아보면 다 편한 방법이 있을 것 같다. 일단 설치 후 써보면서 하나하나 기능을 알아가보자.
 
 # 환경
 Jekyll을 설치하기 위한 현재 상태는 다음과 같다.
 
-* Ubuntu 14.04 && Windows 10 (주로 사용하는 PC 와 Laptop에 모두 설치)
+* Ubuntu 14.04 && Windows 10
 * GitHub 계정 없음
-* 로컬에서 생성된 블로그 관련 파일들을 GitHub에 싱크하기 위한 git : 없음.
+* 로컬에서 생성된 블로그 관련 파일들을 GitHub에 싱크하기 위한 git 클라이언트 -> 없음.
+
+
+[TOC "float:right"]
 
 # GitHub 계정 만들기
 GitHub은 블로그를 무료로 온라인 상에 게시해 주는 호스팅 서비스의 역할을 하게된다. GitHub에서 코드를 다운로드 받은 적은 있지만 아직 내 계정은 생성 한 적이 없으므로 GitHub에 가입을 하여 계정을 만들었다.
@@ -47,7 +51,9 @@ OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로�
 
 
 # Jekyll 설치
+
 ## Ubuntu 14.04
+
 우분투에서 Jekyll의 설치는 다음 한 줄이면 끝난다. 다른 블로그 글들을 찾아보면 Ruby, NodeJS 등의 여러가지 dependency가 있는 걸로 나오는데.. 내 컴에는 이미 모두 설치가 되어 있는지 아니면 다음 명령에서 알아서 처리 하는지(적어도 다음 명령을 실행하는 RubyGems 라는 라이브러리는 설치되어 있는듯 하다.) 간단히 설치를 할 수 있었다.
 
 `gem install jekyll`
@@ -65,6 +71,7 @@ OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로�
 
 ### Step 1. Ruby for Windows 설치
 위 링크의 블로그에서는 루비의 2.0.0 버전을 설치할 것을 추천하고 있다. 하지만, 나는 최신 버전을 선호 하므로, 가장 최신 stable 버전인 Ruby 2.2.5(x64)를 다운 받아 설치 했다.
+
 설치 패키지 URL: <http://rubyinstaller.org/downloads/>
 
 ### Step 2. Ruby DevKit 설치
@@ -93,7 +100,7 @@ Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할
 
 ![Jekyll로 자동 생성된 홈화면]({{ site.url }}/assets/init_jekyll_homepage.png)
 
-### Step 4. jekyll을 위한 추가 기능 설치(Optional)
+### Step 5. jekyll을 위한 추가 기능 설치(Optional)
 * 소스 파일이 변경되면 자동으로 페이지를 생성하기.
 
 	윈도우에서는 이 기능을 위해 wdm이라는 툴을 추가로 설치해주면 된다.
