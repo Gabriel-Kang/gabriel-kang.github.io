@@ -50,7 +50,7 @@ OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로�
 ## Ubuntu 14.04
 우분투에서 Jekyll의 설치는 다음 한 줄이면 끝난다. 다른 블로그 글들을 찾아보면 Ruby, NodeJS 등의 여러가지 dependency가 있는 걸로 나오는데.. 내 컴에는 이미 모두 설치가 되어 있는지 아니면 다음 명령에서 알아서 처리 하는지(적어도 다음 명령을 실행하는 RubyGems 라는 라이브러리는 설치되어 있는듯 하다.) 간단히 설치를 할 수 있었다.
 
-'gem install jekyll'
+`gem install jekyll`
 
 설치 확인을 위해 다음의 명령으로 버전을 확인해 본다.
 
