@@ -4,6 +4,9 @@ title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 ---
 
 # 개요
+
+---
+
 여러가지 프로그래밍 작업 및 공부를 하면서, 그 중간 과정(=삽질)에 대한 기록을 해놔야겠다는 필요성 때문에 블로그를 만들어야겠다는 생각을 하게 됐다.
 그러던 중, 우연히 회사 동료가 GitHub를 이용해서 무료로 블로그를 만들 수 있는 Jekyll이라는 툴을 쓰는 걸 보고, GitHub에 블로깅을 하는게 왠지 굉장히 쿨하게 느껴져서 이렇게 만들게 됐다.
 간단히 Jekyll과 GitHub으로 블로그를 만들면 좋은 점에 대해 기술하자면 다음과 같다.
@@ -22,14 +25,15 @@ title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 아마도 예상되는 단점에 대한 것은 찾아보면 다 편한 방법이 있을 것 같다. 일단 설치 후 써보면서 하나하나 기능을 알아가보자.
 
 # 환경
+
+---
+
+
 Jekyll을 설치하기 위한 현재 상태는 다음과 같다.
 
 * Ubuntu 14.04 && Windows 10
 * GitHub 계정 없음
 * 로컬에서 생성된 블로그 관련 파일들을 GitHub에 싱크하기 위한 git 클라이언트 -> 없음.
-
-
-[TOC "float:right"]
 
 # GitHub 계정 만들기
 GitHub은 블로그를 무료로 온라인 상에 게시해 주는 호스팅 서비스의 역할을 하게된다. GitHub에서 코드를 다운로드 받은 적은 있지만 아직 내 계정은 생성 한 적이 없으므로 GitHub에 가입을 하여 계정을 만들었다.
@@ -51,6 +55,9 @@ OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로�
 
 
 # Jekyll 설치
+
+---
+
 
 ## Ubuntu 14.04
 
@@ -129,6 +136,11 @@ Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할
     참고: 현재 위 구문을 넣고 빌드를 실행하면 pyments를 못 찾겠다는 에러 메시지가 뜨고 빌드가 안된다. 추후 해결책을 찾아서 업데이트 하겠다.
 
 # 생성한 블로그를 GitHub에 게시하기
+
+
+- - -
+
+
 Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 
 ![Jekyll로 생성된 폴더 구조]({{ site.url }}/assets/jekyll_folder_structure.png)
@@ -159,6 +171,11 @@ Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 이제 모든 설치가 끝났고, 블로그를 꾸미고, 글을 올리기만 하면된다. 블로그 테마 변경 및 글을 올리는 내용은 다른 포스트로 올리도록 하겠다.
 
 # 참고 사이트
+
+
+- - -
+
+
 1. 윈도우에서 Jekyll 설치: <http://jekyll-windows.juthilo.com/>
 2. GitHub과의 연동: <http://blog.saltfactory.net/jekyll/upgrade-github-pages-dependency-versions.html>
 3. Jekyll 한글 설명서: <http://jekyllrb-ko.github.io/docs/>
