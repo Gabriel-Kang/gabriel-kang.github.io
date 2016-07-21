@@ -49,11 +49,14 @@ OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로�
 # Jekyll 설치
 ## Ubuntu 14.04
 우분투에서 Jekyll의 설치는 다음 한 줄이면 끝난다. 다른 블로그 글들을 찾아보면 Ruby, NodeJS 등의 여러가지 dependency가 있는 걸로 나오는데.. 내 컴에는 이미 모두 설치가 되어 있는지 아니면 다음 명령에서 알아서 처리 하는지(적어도 다음 명령을 실행하는 RubyGems 라는 라이브러리는 설치되어 있는듯 하다.) 간단히 설치를 할 수 있었다.
-gem install jekyll
+
+'gem install jekyll'
 
 설치 확인을 위해 다음의 명령으로 버전을 확인해 본다.
+
 `jekyll -v`
-출력: Jekyll 0.11.2
+
+출력: > Jekyll 0.11.2
 
 ## Windows 10
 윈도우 환경에서 Jekyll을 설치하는 과정은 다음의 블로그를 참고했다.
@@ -66,38 +69,51 @@ gem install jekyll
 ### Step 2. Ruby DevKit 설치
 Ruby DevKit은 Ruby installer와 동일한 페이지에 있다.  나는 DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe 를 다운 받아 c:\RubyDevKit\에 압축을 풀었다.
 그 다음 devkit을 Ruby와 바인딩하고 설치하는 과정은 명령 프로프트를 열어 다음과 같이 진행하면 된다.
-'''
+
+```
 cd c:\RubyDevKit
 ruby dk.rb init
 ruby dk.rb install
-'''
+```
 
 ### Step 3. jekyll 설치
 Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할 수 있게 되었다. 우분투와 마찬가지로 다음의 명령으로 jekyll을 설치 한다.
+
 `gem install jekyll`
 
 ### Step 4.jekyll으로 블로그용 폴더 생성
 명령 프롬프트에서 내 계정의 GitHub repository를 다운 받은 폴더 폴더로 이동한 후 다음 명령을 입력하면 하위 폴더에 블로그를 위한 기본 템플릿 파일들이 생성된다.
-`jekyll new .'
 
-생성된 블로그를 확인하기 위해 다음의 명령을 입력한 후, 인터넷 브라우저에서 http://127.0.0.1:4000/ 주소로 접속하면 초기 화면을 확인 할 수 있다.
+`jekyll new .`
+
+생성된 블로그를 확인하기 위해 다음의 명령을 입력한 후, 인터넷 브라우저에서 <http://127.0.0.1:4000/> 주소로 접속하면 초기 화면을 확인 할 수 있다.
+
 `jekyll serve -w`
 
 ### Step 4. jekyll을 위한 추가 기능 설치(Optional)
 * 소스 파일이 변경되면 자동으로 페이지를 생성하기.
+
 	윈도우에서는 이 기능을 위해 wdm이라는 툴을 추가로 설치해주면 된다.
-		`gem install wdm`
+	
+	`gem install wdm`
+	
 * Syntax Highlighter 
 	작성한 글에 포함된 소스코드들에 자동으로 하이라이트(=이쁘게)를 추가해주는 기능을 위해서는 Pygments라는 툴을 추가로 설치해야 한다. 이 툴은 Python v2.x 가 설치되어 있어야 한다. 아래 사이트에서 윈도우용 가장 최신 버전(v2.7.12) 파이썬을 다운 받아 설치한다.
-	https://www.python.org/downloads/
+	
+	<https://www.python.org/downloads/>
+	
 	그다음 파이썬용 라이브러리 다운 명령툴인 pip를 설치한다. 다음 경로의 get-pip.py를 로컬에 다운받고 아래의 명령을 실행한다.
-	https://bootstrap.pypa.io/get-pip.py
+	
+	<https://bootstrap.pypa.io/get-pip.py>
+	
 	`python get-pip.py`
 	
 	이제 Pygments를 설치할 차례다.
+	
 	`python -m pip install Pygments`
 	
 	내가 만든 블로그에서 Pygments의 기능을 적용하려면 블로그 로컬 폴더의 _config.yml을 문서 편집기에서 열고 다음의 구문을 추가해 준다.
+	
 	`highlighter: pygments`
 	
 
@@ -117,10 +133,10 @@ Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 
 
 위와 같이 깃헙 로긴 메뉴가 나타난다.  아이디와 비번을 넣으면, 깃헙에 업로드가 완료된다.
-이후, 인터넷 브라우저에서 내 깃헙 계정의 repository(https://github.com/Gabriel-Kang/gabriel-kang.github.io)로 접속해 보면 로컬에 있던 파일이 깃헙에 올라간것을 확인 할 수 있다.
+이후, 인터넷 브라우저에서 내 깃헙 계정의 repository(<https://github.com/Gabriel-Kang/gabriel-kang.github.io>)로 접속해 보면 로컬에 있던 파일이 깃헙에 올라간것을 확인 할 수 있다.
 
 
-이제 블로그로의 접속은 repository명으로 접근 가능하다.(https://gabriel-kang.github.io/)
+이제 블로그로의 접속은 repository명으로 접근 가능하다.(<https://gabriel-kang.github.io/>)
 
 
 
@@ -129,6 +145,6 @@ Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 이제 모든 설치가 끝났고, 블로그를 꾸미고, 글을 올리기만 하면된다.
 
 # 참고 사이트
-1. 윈도우에서 Jekyll 설치: http://jekyll-windows.juthilo.com/
-2. GitHub과의 연동 http://blog.saltfactory.net/jekyll/upgrade-github-pages-dependency-versions.html
-3. Jekyll 한글 설명서: http://jekyllrb-ko.github.io/docs/
+1. 윈도우에서 Jekyll 설치: <http://jekyll-windows.juthilo.com/>
+2. GitHub과의 연동: <http://blog.saltfactory.net/jekyll/upgrade-github-pages-dependency-versions.html>
+3. Jekyll 한글 설명서: <http://jekyllrb-ko.github.io/docs/>
