@@ -5,7 +5,7 @@ title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 
 # 개요
 여러가지 프로그래밍 작업 및 공부를 하면서, 그 중간 과정(=삽질)에 대한 기록을 해놔야겠다는 필요성 때문에 블로그를 만들어야겠다는 생각을 하게 됐다.
-그러던 중, 우연히 회사 동료가 GitHub를 이용해서 무료로 블로그를 만들 수 있는 Jekyll이라는 툴을 쓰는 걸 보고, 깃헙에 블로깅을 하는게 왠지 굉장히 쿨하게 느껴져서 이렇게 만들게 됐다.
+그러던 중, 우연히 회사 동료가 GitHub를 이용해서 무료로 블로그를 만들 수 있는 Jekyll이라는 툴을 쓰는 걸 보고, GitHub에 블로깅을 하는게 왠지 굉장히 쿨하게 느껴져서 이렇게 만들게 됐다.
 간단히 Jekyll과 GitHub으로 블로그를 만들면 좋은 점에 대해 기술하자면 다음과 같다.
 
 * 블로그에 올릴 글들을 로컬에서 작성 및 편집 한 후 원할 때 블로그에 게시 할 수 있다.
@@ -56,7 +56,8 @@ OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로�
 
 `jekyll -v`
 
-출력: > Jekyll 0.11.2
+출력: 
+> Jekyll 0.11.2
 
 ## Windows 10
 윈도우 환경에서 Jekyll을 설치하는 과정은 다음의 블로그를 참고했다.
@@ -118,33 +119,37 @@ Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할
 	
 	`highlighter: pygments`
 	
+    참고: 현재 위 구문을 넣고 빌드를 실행하면 pyments를 못 찾겠다는 에러 메시지가 뜨고 빌드가 안된다. 추후 해결책을 찾아서 업데이트 하겠다.
 
 # 생성한 블로그를 GitHub에 게시하기
 Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 
-![Jekyll로 생성된 폴더 구조({{ site.url }}/assets/jekyll_folder_structure.png)
+![Jekyll로 생성된 폴더 구조]({{ site.url }}/assets/jekyll_folder_structure.png)
 
 위 내용을 GitHub에 올리기 위해 모든 파일과 폴더를 선택 후 우클릭하여 TortoiseGit의 항목 중 add 버튼을 클릭 한다.
 
+![Tortoise Git에서 add 항목 선택]({{ site.url }}/assets/git_add_contextmenu.png)
 
 그리고 모든 파일과 폴더를 선택한 후 OK 버튼을 누른다.
 
+![Tortoise Git add 메뉴에서 repository에 추가할 항목 선택]({{ site.url }}/assets/git_add_menu.png)
 
 이제 윈도우 탐색기에서 우클릭을 하고, "Git commit -> master .." 버튼을 누른 후, message에 "첫번째 업데이트" 등의 기록을 남기고 커밋한다.
 마지막으로 다시, 윈도우 탐색기에서 우클릭을 하고 TortoiseGit 메뉴에서 push를 누르면
 
+![GitHub push]({{ site.url }}/assets/GitHub_push.png)
 
-위와 같이 깃헙 로긴 메뉴가 나타난다.  아이디와 비번을 넣으면, 깃헙에 업로드가 완료된다.
-이후, 인터넷 브라우저에서 내 깃헙 계정의 repository(<https://github.com/Gabriel-Kang/gabriel-kang.github.io>)로 접속해 보면 로컬에 있던 파일이 깃헙에 올라간것을 확인 할 수 있다.
+위와 같이 GitHub 로긴 메뉴가 나타난다.  아이디와 비번을 넣으면, GitHub에 업로드가 완료된다.
+이후, 인터넷 브라우저에서 내 GitHub 계정의 repository(<https://github.com/Gabriel-Kang/gabriel-kang.github.io>)로 접속해 보면 로컬에 있던 파일이 GitHub에 올라간것을 확인 할 수 있다.
 
+![GitHub 파일 구조]({{ site.url }}/assets/GitHub_files.png)
 
 이제 블로그로의 접속은 repository명으로 접근 가능하다.(<https://gabriel-kang.github.io/>)
 
-
+![블로그 메인]({{ site.url }}/assets/BlogMain.png)
 
 로컬에서 보았던 것과 동일한 웹페이지가 이제 인터넷을 통해 접속이 가능해졌다.
-
-이제 모든 설치가 끝났고, 블로그를 꾸미고, 글을 올리기만 하면된다.
+이제 모든 설치가 끝났고, 블로그를 꾸미고, 글을 올리기만 하면된다. 블로그 테마 변경 및 글을 올리는 내용은 다른 포스트로 올리도록 하겠다.
 
 # 참고 사이트
 1. 윈도우에서 Jekyll 설치: <http://jekyll-windows.juthilo.com/>
