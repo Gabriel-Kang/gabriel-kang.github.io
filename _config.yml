@@ -18,3 +18,8 @@ github_username:  Gabriel-Kang
 
 # Build settings
 markdown: kramdown
+#highlighter: pygments
+
+# 마크다운 처리기
+kramdown:
+    input: GFM

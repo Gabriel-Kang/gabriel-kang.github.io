@@ -41,7 +41,7 @@ GitHub에 블로그를 위한 Repository를 새로 만든다.
 Tortoise Git이 설치가 되면, GitHub에 생성한 repository를 로컬로 연결시킨다.
 윈도우 탐색기에서 블로그 파일을 보관할 폴더에 우클릭을 하여 Git clone 항목을 클릭하면 다음과 같은 윈도우가 뜬다.
 
-
+![git clone menu]({{ site.url }}/assets/git_clone_menu.png)
 
 OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로컬에 복사된다. 하지만 지금은 아무 내용이 없이 비어 있을 것이다.
 
