@@ -90,6 +90,8 @@ Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할
 
 `jekyll serve -w`
 
+![Jekyll로 자동 생성된 홈화면]({{ site.url }}/assets/init_jekyll_homepage.png)
+
 ### Step 4. jekyll을 위한 추가 기능 설치(Optional)
 * 소스 파일이 변경되면 자동으로 페이지를 생성하기.
 
@@ -120,7 +122,7 @@ Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할
 # 생성한 블로그를 GitHub에 게시하기
 Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 
-
+![Jekyll로 생성된 폴더 구조({{ site.url }}/assets/jekyll_folder_structure.png)
 
 위 내용을 GitHub에 올리기 위해 모든 파일과 폴더를 선택 후 우클릭하여 TortoiseGit의 항목 중 add 버튼을 클릭 한다.
 
