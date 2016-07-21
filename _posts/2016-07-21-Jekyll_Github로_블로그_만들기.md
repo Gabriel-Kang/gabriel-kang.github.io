@@ -3,7 +3,7 @@ layout: post
 title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 ---
 
-#개요
+# 개요
 여러가지 프로그래밍 작업 및 공부를 하면서, 그 중간 과정(=삽질)에 대한 기록을 해놔야겠다는 필요성 때문에 블로그를 만들어야겠다는 생각을 하게 됐다.
 그러던 중, 우연히 회사 동료가 GitHub를 이용해서 무료로 블로그를 만들 수 있는 Jekyll이라는 툴을 쓰는 걸 보고, 깃헙에 블로깅을 하는게 왠지 굉장히 쿨하게 느껴져서 이렇게 만들게 됐다.
 간단히 Jekyll과 GitHub으로 블로그를 만들면 좋은 점에 대해 기술하자면 다음과 같다.
@@ -17,18 +17,18 @@ title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 
 아마도 예상되는 단점에 대한 것은 찾아보면 다 편한 방법이 있을 것 같다. 일단 설치 후 써보면서 하나하나 기능을 알아가보자.
 
-#환경
+# 환경
 Jekyll을 설치하기 위한 현재 상태는 다음과 같다.
 * Ubuntu 14.04 && Windows 10 (주로 사용하는 PC 와 Laptop에 모두 설치)
 * GitHub 계정 없음
 * 로컬에서 생성된 블로그 관련 파일들을 GitHub에 싱크하기 위한 git : 없음.
 
-#GitHub 계정 만들기
+# GitHub 계정 만들기
 GitHub은 블로그를 무료로 온라인 상에 게시해 주는 호스팅 서비스의 역할을 하게된다. GitHub에서 코드를 다운로드 받은 적은 있지만 아직 내 계정은 생성 한 적이 없으므로 GitHub에 가입을 하여 계정을 만들었다.
 GitHub에 블로그를 위한 Repository를 새로 만든다.
 이 때 Repo 이름은 <github계정명>.github.io 의 형식으로 생성한다. 반드시 이름 뒤에 .github.io를 붙이는 것을 명심하자.
 
-#Git 클라이언트 설치 - Window
+# Git 클라이언트 설치 - Window
 로컬에서 작성한 문서를 온라인에 게시하기 위해서는 git을 이용한다. 윈도우에서는 Tortoise Git 클라이언트 프로그램을 많이 쓰므로, 해당 툴을 다운로드 하여 설치한다.
 https://tortoisegit.org/download/
 
@@ -42,8 +42,8 @@ Tortoise Git이 설치가 되면, GitHub에 생성한 repository를 로컬로 �
 OK 버튼을 누르면 해당 폴더가 내 Github 계정의 repository가 로컬에 복사된다. 하지만 지금은 아무 내용이 없이 비어 있을 것이다.
 
 
-#Jekyll 설치
-##Ubuntu 14.04
+# Jekyll 설치
+## Ubuntu 14.04
 우분투에서 Jekyll의 설치는 다음 한 줄이면 끝난다. 다른 블로그 글들을 찾아보면 Ruby, NodeJS 등의 여러가지 dependency가 있는 걸로 나오는데.. 내 컴에는 이미 모두 설치가 되어 있는지 아니면 다음 명령에서 알아서 처리 하는지(적어도 다음 명령을 실행하는 RubyGems 라는 라이브러리는 설치되어 있는듯 하다.) 간단히 설치를 할 수 있었다.
 gem install jekyll
 
@@ -51,15 +51,15 @@ gem install jekyll
 'jekyll -v'
 출력: Jekyll 0.11.2
 
-##Windows 10
+## Windows 10
 윈도우 환경에서 Jekyll을 설치하는 과정은 다음의 블로그를 참고했다.
 http://jekyll-windows.juthilo.com/
 
-###Step 1. Ruby for Windows 설치
+### Step 1. Ruby for Windows 설치
 위 링크의 블로그에서는 루비의 2.0.0 버전을 설치할 것을 추천하고 있다. 하지만, 나는 최신 버전을 선호 하므로, 가장 최신 stable 버전인 Ruby 2.2.5(x64)를 다운 받아 설치 했다.
 설치 패키지 URL: http://rubyinstaller.org/downloads/
 
-###Step 2. Ruby DevKit 설치
+### Step 2. Ruby DevKit 설치
 Ruby DevKit은 Ruby installer와 동일한 페이지에 있다.  나는 DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe 를 다운 받아 c:\RubyDevKit\에 압축을 풀었다.
 그 다음 devkit을 Ruby와 바인딩하고 설치하는 과정은 명령 프로프트를 열어 다음과 같이 진행하면 된다.
 '''
@@ -68,18 +68,18 @@ ruby dk.rb init
 ruby dk.rb install
 '''
 
-###Step 3. jekyll 설치
+### Step 3. jekyll 설치
 Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할 수 있게 되었다. 우분투와 마찬가지로 다음의 명령으로 jekyll을 설치 한다.
 'gem install jekyll'
 
-###Step 4.jekyll으로 블로그용 폴더 생성
+### Step 4.jekyll으로 블로그용 폴더 생성
 명령 프롬프트에서 내 계정의 GitHub repository를 다운 받은 폴더 폴더로 이동한 후 다음 명령을 입력하면 하위 폴더에 블로그를 위한 기본 템플릿 파일들이 생성된다.
 'jekyll new .'
 
 생성된 블로그를 확인하기 위해 다음의 명령을 입력한 후, 인터넷 브라우저에서 http://127.0.0.1:4000/ 주소로 접속하면 초기 화면을 확인 할 수 있다.
 'jekyll serve -w'
 
-###Step 4. jekyll을 위한 추가 기능 설치(Optional)
+### Step 4. jekyll을 위한 추가 기능 설치(Optional)
 * 소스 파일이 변경되면 자동으로 페이지를 생성하기.
 	윈도우에서는 이 기능을 위해 wdm이라는 툴을 추가로 설치해주면 된다.
 		'gem install wdm'
@@ -97,7 +97,7 @@ Ruby를 설치함에 따라서 명령 프로프트에서 gem 명령을 사용할
 	'highlighter: pygments'
 	
 
-#생성한 블로그를 GitHub에 게시하기
+# 생성한 블로그를 GitHub에 게시하기
 Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 
 
@@ -124,7 +124,7 @@ Jekyll로 생성한 블로그 폴더 내용은 다음과 같다.
 
 이제 모든 설치가 끝났고, 블로그를 꾸미고, 글을 올리기만 하면된다.
 
-#참고 사이트
+# 참고 사이트
 1. 윈도우에서 Jekyll 설치: http://jekyll-windows.juthilo.com/
 2. GitHub과의 연동 http://blog.saltfactory.net/jekyll/upgrade-github-pages-dependency-versions.html
 3. Jekyll 한글 설명서: http://jekyllrb-ko.github.io/docs/
