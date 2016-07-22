@@ -17,9 +17,8 @@ url: "https://gabriel-kang.github.io/" # the base hostname & protocol for your s
 github_username:  Gabriel-Kang
 
 # Build settings
-markdown: kramdown
 #highlighter: pygments
-
-# 마크다운 처리기
-kramdown:
-    input: GFM
+#pygments: true
+markdown: redcarpet 
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "fenced_code_blocks", "strikethrough"]  #default setting github
