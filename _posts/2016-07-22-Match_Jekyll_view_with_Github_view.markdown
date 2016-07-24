@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Jekyll로 생성된 블로그 페이지와 Github의 페이지 모양 일치시키기
 category: 
  - Jekyll

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Jekyll theme 변경
 category: 
  - Jekyll

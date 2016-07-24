@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Jekyll + Github로 블로그 만들기 (for Windows 10)
 category:
  - Jekyll

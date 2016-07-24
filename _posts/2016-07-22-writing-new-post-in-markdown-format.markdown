@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Markdown 포맷으로 블로그 포스트 작성 및 Jekyll 라이브러리로 블로그 꾸미기
 ---
 
