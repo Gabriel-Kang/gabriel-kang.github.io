@@ -6,15 +6,15 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en"
+locale                   : "ko-KR"
 title                    : "Gabriel's Garage Office"
 title_separator          : "-"
 name                     : "Gabriel Kang"
 description              : "This blog posts various coding or research stuff for personal storage purpose. I am interested in Computer vision, deep learning, c/c++, shell scripts, SW algorithms, and etc."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://gabriel-kang.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-gh_repo                  : https://github.com/Gabriel-Kang/gabriel-kang.github.io
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+gh_repo                  : "https://github.com/Gabriel-Kang/gabriel-kang.github.io"
+teaser                   : "default_teaser.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -64,7 +64,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "Gabriel Kang"
-  avatar           : "bio-photo.jpg"
+  avatar           : "my-bio.jpg"
   bio              : "I am a software engineer in Seoul, Korea."
   location         : "Seoul, Korea"
   email            : "chipchoc@hanmail.net"
@@ -73,7 +73,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "idea2real"
   foursquare       :
   github           :
   google_plus      :
