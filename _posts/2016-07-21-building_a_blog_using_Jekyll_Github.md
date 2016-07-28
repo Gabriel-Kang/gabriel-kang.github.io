@@ -10,6 +10,7 @@ tags:
  - Markdown
  - Windows10
 summary: 윈도우 환경에 Jekyll 라이브러리 설치 방법 및 Github에서 블로그 시작하기.
+comments: true
 ---
 
 # 개요
