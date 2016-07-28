@@ -18,9 +18,9 @@ teaser                   : "default_teaser.jpg" # filename of teaser fallback te
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "gabrielkang.disqus.com" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -206,3 +206,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    
+defaults:
+ # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: true
