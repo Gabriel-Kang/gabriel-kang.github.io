@@ -92,7 +92,14 @@ author:
   xing             :
   youtube          :
 
-
+defaults:
+ # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: true
+    
 # Reading Files
 include:
   - .htaccess
@@ -207,10 +214,4 @@ compress_html:
   ignore:
     envs: development
     
-defaults:
- # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      comments: true
+
