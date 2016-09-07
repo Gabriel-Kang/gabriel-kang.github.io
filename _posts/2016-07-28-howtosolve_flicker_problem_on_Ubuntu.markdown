@@ -1,9 +1,10 @@
 ---
 layout: single
-title: 우분투에서 Nvidia GPU 드라이버 업데이트 후 UI Flickering 문제 해결
+title: 우분투에서 Nvidia GPU 드라이버 업데이트 후 UI 화면 깜빡임(Flickering) 문제 해결
 category:
  - Linux
 tags:
+ - 화면깜빡임
  - Flickering
  - Nvidia GPU driver
  - Linux
